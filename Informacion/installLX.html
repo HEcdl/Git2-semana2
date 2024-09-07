@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Todo sobre Git</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>Instala Git</title>
 </head>
 
 <body>
@@ -45,11 +45,11 @@
                                 Informacion
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./Informacion/install.html">Instalacion MacOs</a>
+                                <li><a class="dropdown-item" href="./install.html">Instalacion MacOs</a>
                                 </li>
-                                <li><a class="dropdown-item" href="./Informacion/installw.html">Instala en Windows</a>
+                                <li><a class="dropdown-item" href="./installw.html">Instala en Windows</a>
                                 </li>
-                                <li><a class="dropdown-item" href="./Informacion/installLX.html">Instala en Linux</a>
+                                <li><a class="dropdown-item" href="./installLX.html">Instala en Linux</a>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider">
@@ -73,62 +73,61 @@
     </header>
     <div class="principal">
         <div class="p-3 mb-1 mt-1 bg-dark-subtle text-dark">
-            <p class="lh-base text-wrap ">Git es un software de control de versiones
-                diseñado
-                por
-                Linus
-                Torvalds,
-                pensando en
-                la eficiencia, la confiabilidad y
-                compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de
-                archivos de código
-                fuente</p>
+            <div class="container-md bg-dark-subtle text-dark p-20 mt-20 bg-gray">
+                <main>
+                    <h2 class="m-7">Instala en Linux</h2>
+                    <div class="w-25">
+                        <img src="https://phantom-elmundo.unidadeditorial.es/215c5d4a7810a8ae7cd275c297d0b2a6/crop/168x72/1032x648/resize/828/f/webp/assets/multimedia/imagenes/2021/08/26/16299752237253.jpg"
+                            class="img-fluid mx-auto object-fit-cover border rounded" alt="" srcset="">
+                        <div class="content">
+                            <p class="mt-25 text-wrap">
+                                It is easiest to install Git on Linux using the preferred package manager of your Linux
+                                distribution. If you prefer to
+                                build from source, you can find tarballs on kernel.org. The latest version is 2.46.0.
+                                Debian/Ubuntu
+
+                                For the latest stable version for your release of Debian/Ubuntu
+                                <code># apt-get install git</code>
+
+                                For Ubuntu, this PPA provides the latest stable upstream Git version
+                                <code># add-apt-repository ppa:git-core/ppa # apt update; apt install git</code>
+                                Fedora
+                                <code># yum install git (up to Fedora 21)
+                                # dnf install git (Fedora 22 and later)</code>
+                                Gentoo
+                                <code># emerge --ask --verbose dev-vcs/git</code><br>
+                                Arch Linux
+                                <code># pacman -S git</code>
+                                openSUSE
+                                <code># zypper install git</code><br>
+                                Mageia
+                                <code># urpmi git</code>
+                                Nix/NixOS
+                                <code># nix-env -i git</code><br>
+                                FreeBSD
+                                <code># pkg install git</code>
+                                Solaris 9/10/11 (OpenCSW)
+                                <code># pkgutil -i git</code><br>
+                                Solaris 11 Express
+                                <code># pkg install developer/versioning/git</code>
+                                OpenBSD
+                                <code># pkg_add git</code><br>
+                                Alpine
+                                <code>$ apk add git</code>
+                                Red Hat Enterprise Linux, Oracle Linux, CentOS, Scientific Linux, et al.
+
+                                RHEL and derivatives typically ship older versions of git. You can download a tarball
+                                and build from source, or use a
+                                3rd-party repository such as the IUS Community Project to obtain a more recent version
+                                of git.<br>
+                                Slitaz
+                                <code>$ tazpkg get-install git</code>
+                            </p>
+                        </div>
+                    </div>
+                </main>
+            </div>
         </div>
-        <div class="container-md bg-dark-subtle text-dark p-20 mt-20 bg-gray">
-            <main>
-                <h2 class="m-7">Qué es Git?</h2>
-                <div class="mx-auto">
-                    <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2023/05/install-git.jpg"
-                        class="img-fluid" alt="" srcset="">
-                </div>
-                <div class="content">
-                    <p class="mt-25 text-wrap">
-
-
-                        Hoy en día, Git es, con diferencia, el sistema de control de versiones moderno más utilizado del
-                        mundo. Git es un
-                        proyecto de código abierto maduro y con un mantenimiento activo que desarrolló originalmente
-                        Linus
-                        Torvalds, el famoso
-                        creador del kernel del sistema operativo Linux, en 2005. Un asombroso número de proyectos de
-                        software dependen de Git
-                        para el control de versiones, incluidos proyectos comerciales y de código abierto. Los
-                        desarrolladores que han trabajado
-                        con Git cuentan con una buena representación en la base de talentos disponibles para el
-                        desarrollo
-                        de software, y este
-                        sistema funciona a la perfección en una amplia variedad de sistemas operativos e IDE (entornos
-                        de
-                        desarrollo
-                        integrados).
-
-                        Git, que presenta una arquitectura distribuida, es un ejemplo de DVCS (sistema de control de
-                        versiones distribuido, por
-                        sus siglas en inglés). En lugar de tener un único espacio para todo el historial de versiones
-                        del
-                        software, como sucede
-                        de manera habitual en los sistemas de control de versiones antaño populares, como CVS o
-                        Subversion
-                        (también conocido
-                        como SVN), en Git, la copia de trabajo del código de cada desarrollador es también un
-                        repositorio
-                        que puede albergar el
-                        historial completo de todos los cambios.
-                    </p>
-                </div>
-            </main>
-        </div>
-
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
