@@ -33,7 +33,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../comandbasic.html">Comandos
+                            <a class="nav-link active" aria-current="page" href="../comanbasic.html">Comandos
                                 Basicos</a>
                         </li>
                         <li class="nav-item">
@@ -45,8 +45,8 @@
                                 Informacion
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="./install.html">Instala en Mac</a></li>
-                                <li><a class="dropdown-item" href="./installw.html">Instalar en Windows</a></li>
+                                <li><a class="dropdown-item" href="./install.html">Instalacion</a></li>
+                                <li><a class="dropdown-item" href="./installw.html">Another action</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -71,44 +71,39 @@
         <div class="p-3 mb-1 mt-1 bg-dark-subtle text-dark">
             <div class="container-md bg-dark-subtle text-dark p-20 mt-20 bg-gray">
                 <main>
-                    <h2 class="m-7">Instala en Mac</h2>
+                    <h2 class="m-7">Instala en Windows</h2>
                     <div class="w-25">
-                        <img src="https://camranger.com/wp-content/uploads/2018/08/macOS.jpg"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWAcdKeE8VDyRYqpnyImnFJiLfSXkInAtrOw&s"
                             class="img-fluid mx-auto object-fit-cover border rounded" alt="" srcset="">
                     </div>
                     <div class="content">
                         <p class="mt-25 text-wrap">
-                            There are several options for installing Git on macOS. Note that any non-source
-                            distributions are provided by third
-                            parties, and may not be up to date with the latest source release.<br>
+                            Download for Windows
+                            <a
+                                href="https://github.com/git-for-windows/git/releases/download/v2.46.0.windows.1/Git-2.46.0-64-bit.exe">Click
+                                here to download</a>
+                            Click here to download the latest (2.46.0) 64-bit version of Git for Windows. This is the
+                            most recent maintained build.
+                            It was released about 1 month ago, on 2024-07-29.
+                            Other Git for Windows downloads
+                            Standalone Installer
 
-                            Choose one of the following options for installing Git on macOS:
-                            Homebrew<br>
+                            32-bit Git for Windows Setup.
 
-                            Install homebrew if you don't already have it, then:
-                            <code>$ brew install git</code>
-                            MacPorts<br>
+                            64-bit Git for Windows Setup.
+                            Portable ("thumbdrive edition")
 
-                            Install MacPorts if you don't already have it, then:
-                            <code>$ sudo port install git</code>
-                            Xcode<br>
+                            32-bit Git for Windows Portable.
 
-                            Apple ships a binary package of Git with Xcode.
-                            Binary installer<br>
+                            64-bit Git for Windows Portable.
+                            Using winget tool
 
-                            Tim Harper provides an installer for Git. The latest version is 2.33.0, which was released
-                            about 3 years ago, on
-                            2021-08-30.
-                            Building from Source<br>
+                            Install winget tool if you don't already have it, then type this command in command prompt
+                            or Powershell.
+                            <code>winget install --id Git.Git -e --source winget</code>
 
-                            If you prefer to build from source, you can find tarballs on kernel.org. The latest version
-                            is 2.46.0.
-                            <code>Installing git-gui</code><br>
-
-                            If you would like to install git-gui and gitk, git's commit GUI and interactive history
-                            browser, you can do so using
-                            homebrew
-                            <code>$ brew install git-gui</code>
+                            The current source code release is version 2.46.0. If you want the newer version, you can
+                            build it from the source code.
                         </p>
                     </div>
                 </main>
@@ -116,11 +111,6 @@
         </div>
     </div>
 
-
-
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-        </script>
 </body>
 
 </html>
